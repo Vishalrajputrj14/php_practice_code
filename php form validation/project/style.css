@@ -1,0 +1,108 @@
+   .container { 
+            background: url(bo.jpg) no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div.loginHeader {
+            text-align: center;
+        }
+
+        div.loginHeader h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #1d0a0f;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.loginHeader p {
+            color: #ffdae3;   
+            font-size: 50px;
+            border-bottom: 5px solid #0b0106;
+            margin: 0;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        div.loginHeader p::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background: #13010a;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        div.loginbody form {
+            margin: 0 auto;
+            width: 450px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 50px;
+            border: 10px solid #fff;
+            box-sizing: border-box;
+        }
+
+        div.loginInputsCantainer input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 5px;
+        }
+
+      div.loginInputsCantainer button {
+    width: 60%; /* पहले 100% था, अब 60% ताकि बड़ा दिखे लेकिन चौड़ा नहीं */
+    padding: 15px; /* पहले 12px, अब थोड़ा मोटा */
+    background-color: #f685a2;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* हल्का और round */
+    font-size: 20px; /* पहले 18px, अब थोड़ा बड़ा */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0 auto; /* ये इसे center में ले आएगा */
+}
+
+
+        div.loginInputsCantainer button:hover {
+            background-color: #f655a2;
+        }
+
+        /* ✅ सिर्फ form को responsive बनाने वाला हिस्सा */
+        @media (max-width: 500px) {
+            div.loginbody form {
+                width: 90%;
+                padding: 30px;
+            }
+
+            div.loginHeader h1 {
+                font-size: 36px;
+            }
+
+            div.loginHeader p {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            div.loginHeader h1 {
+                font-size: 28px;
+            }
+
+            div.loginHeader p {
+                font-size: 18px;
+            }
+
+            div.loginbody form {
+                padding: 20px;
+            }
+        }
