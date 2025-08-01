@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Rajput | Portfolio</title>
+  <link rel="stylesheet" href="mahak.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="gradient-bg"></div>
+
+  <header class="glass-header">
+    <h1 class="logo">Vishal Rajput</h1>
+    <nav>
+   
+  <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+  <a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a>
+  <a href="#photos"><i class="fas fa-camera-retro"></i> Photos</a>
+  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+
+
+    </nav>
+  </header>
+
+  <section class="intro">
+    <img src="IMG_20240818_101652_308.jpg" alt="Vishal Rajput" class="profile-img" />
+    <h2>Hello, I'm <span>Vishal</span></h2>
+    <p>Web Developer | Full Stack Learner | UI/UX Enthusiast</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="card-container">
+      <!-- Project Cards Here (same as before) -->
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="card-container">
+      <!-- Skill Cards Here (same as before) -->
+    </div>
+  </section>
+
+  <!-- 🔥 Photos Section -->
+  <section id="photos">
+    <h2>My Photos</h2>
+    <div class="photo-gallery">
+      <img src="Rooms 1.jpg" alt="Photo 1" class="gallery-img" />
+      <img src="Rooms 2.jpg" alt="Photo 2" class="gallery-img" />
+      <img src="Rooms 3.jpg" alt="Photo 3" class="gallery-img" />
+      <img src="Rooms 5.jpg" alt="Photo 4" class="gallery-img" />
+    </div>
+  </section>
+
+  <!-- 🔍 Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="#" alt="Enlarged Photo" />
+  </div>
+  <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2 class="section-title">📩 Contact Me</h2>
+    <p class="section-subtitle">Let’s work together or just say hello!</p>
+    <form action="contact_submit.php" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="contact-btn">Send Message 🚀</button>
+    </form>
+  </div>
+</section>
+
+
+  <footer class="glass-footer">
+    <p>© 2025 Vishal Rajput | All Rights Reserved</p>
+  </footer>
+
+  <script src="mahak.js"></script>
+</body>
+</html>

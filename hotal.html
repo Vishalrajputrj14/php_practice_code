@@ -1,0 +1,494 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website in Hotel</title>
+        <link rel="stylesheet" href="holat.css">
+        <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" ...>
+        <!-- Boxicons CDN link -->
+    <!-- ✅ Latest & working Font Awesome v6.5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8EJp3Zk+jp6lwI0OQkBF1n0lglY2l9LUiwHOPif6EZQ46ohcM9KD0V9gU7M09zQXQF3Lf+WcdNfZr3vcXYMJjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<style>
+   .room {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  text-align: center;
+}
+
+.room .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.room-slider .swiper-slide {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.room-slider .swiper-slide:hover {
+  transform: translateY(-10px);
+}
+
+.slide .image {
+  position: relative;
+}
+
+.slide .image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.slide .price {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.slide .image a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #007bff;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow
+    }
+    
+</style>
+    </head>
+    <body>
+    <header class="header">
+        <a href="index.html" class="logo">
+    <img src="rajput.png" alt="Logo" style="width: 100px; height: auto; margin-left: 0; display: block;">
+        </a>
+    <nav class="nav-links" style="display: flex; gap: 20px; align-items: center; font-family: 'Segoe UI', sans-serif; font-size: 16px;">
+    <a href="hotal.html" style="padding: 8px 12px; transition: 0.3s ease;" onmouseover="this.style.color='#007BFF'" onmouseout="this.style.color='#222'">Home</a>
+    <a href="about.php" style="text-decoration: none; color: #222; padding: 8px 12px; transition: 0.3s ease;">About</a>
+    <a href="rooms.html" style="text-decoration: none; color: #222; padding: 8px 12px; transition: 0.3s ease;">Rooms</a>
+    <a href="#" class="book-btn" style="text-decoration: none; background-color: #1add0c; color: white; padding: 8px 16px; border-radius: 5px; transition: 0.3s ease;">Book Now</a>
+    </nav>
+    </header>
+
+
+
+
+    <section class="home" id="home">
+        <div class="home_image_container ">
+            <div class="home_content">
+                <h1>it's where dreams come tharu</h1>
+                <p>Visit out affer.</p>
+                <p><b> VISHAL RAJPUT HOTEL </b></p>
+            </div>
+            <div class="booking__container">
+                <form> 
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text"  />
+                            <label> Location</label>
+                        </div>
+                        <p>whe are ypu going?</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text"  />
+                            <label> check in</label>
+                        </div>
+                        <p> add date</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text"  />
+                            <label>  check  ou</label>
+                        </div>
+                        <p> add date</p>
+                    </div>
+                    <div class="form__group">
+                        <div class="input__group">
+                            <input type="text"  />
+                            <label> adults </label>
+                        </div>
+                        <p> add adults</p>
+                    </div>
+                </form>
+                <button class="btn"> <i class='bx bx-search-alt'></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="About" id="About">
+        <div class="row">
+        <div class="image">
+            <img src="home image 3.jpg" alt="">
+
+        </div>
+        <div class="content">
+
+            <h3>About us </h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem distinctio eos beatae, possimus atque rem molestiae
+                nesciunt eveniet numquam voluptatum omnis laudantium error eligendi perspiciatis fugiat nemo delectus minus. Reiciendis?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam odit aliquam iste perspiciatis
+                laboriosam eligendi natus quaerat veniam maiores eaque numquam quis et libero dolorem at temporibus incidunt, reiciendis explicabo?</p>
+        </div>
+    
+        </div>
+        
+    </section>
+
+    <!-- section 3  rooms  -->
+
+
+    <section class="room" id="room">
+
+        <h1 class="heading "> our room</h1>
+
+        <div class="swiper  room-slider">
+
+
+    <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide slide ">
+
+            <div class="image">
+
+            <samp class="price">500 rupees</samp>
+            <img src="Rooms 1.jpg" alt="">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+            <div class="content">
+                <h3> Deluxe Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere deserunt consequatur explicabo omnis harum culpa nostrum 
+            cupiditate reprehenderit. Dolorem blanditiis ipsum nobis maiores doloribus excepturi laboriosam nam,
+            ipsam consectetur.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+
+
+
+
+
+
+
+            <a href="#" class="btn">Book now</a>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide slide ">
+
+            <div class="image">
+
+            <samp class="price">500 rupees</samp>
+            <img src="Rooms 2.jpg" alt="">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+            <div class="content">
+                <h3> Deluxe Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere deserunt consequatur explicabo omnis harum culpa nostrum 
+            cupiditate reprehenderit. Dolorem blanditiis ipsum nobis maiores doloribus excepturi laboriosam nam,
+            ipsam consectetur.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+
+
+            <a href="#" class="btn">Book now</a>
+            </div>
+        </div>
+        
+        <div class="swiper-slide slide ">
+
+            <div class="image">
+
+            <samp class="price">500 rupees</samp>
+            <img src="Rooms 3.jpg" alt="">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+            <div class="content">
+                <h3> Deluxe Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere deserunt consequatur explicabo omnis harum culpa nostrum 
+            cupiditate reprehenderit. Dolorem blanditiis ipsum nobis maiores doloribus excepturi laboriosam nam,
+            ipsam consectetur.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Book now </a>
+            </div>
+        </div>
+        
+
+        <div class="swiper-slide slide ">
+
+            <div class="image">
+
+            <samp class="price">500 rupees</samp>
+            <img src="Rooms 4.jpg" alt="">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+            <div class="content">
+                <h3> Deluxe Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere deserunt consequatur explicabo omnis harum culpa nostrum 
+            cupiditate reprehenderit. Dolorem blanditiis ipsum nobis maiores doloribus excepturi laboriosam nam,
+            ipsam consectetur.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Book now</a>
+            </div>
+        </div>
+
+
+        <div class="swiper-slide slide ">
+
+            <div class="image">
+
+            <samp class="price">500 rupees</samp>
+            <img src="Rooms 5.jpg" alt="">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+            <div class="content">
+                <h3> Deluxe Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere deserunt consequatur explicabo omnis harum culpa nostrum 
+            cupiditate reprehenderit. Dolorem blanditiis ipsum nobis maiores doloribus excepturi laboriosam nam,
+            ipsam consectetur.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Book now</a>
+            </div>
+        </div>
+
+    
+        
+        <div class="swiper-slide slide ">
+
+            <div class="image">
+
+            <samp class="price">500 rupees</samp>
+            <img src="Rooms 6.jpg" alt="">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            </div>
+
+            <div class="content">
+                <h3> Deluxe Room</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere deserunt consequatur explicabo omnis harum culpa nostrum 
+            cupiditate reprehenderit. Dolorem blanditiis ipsum nobis maiores doloribus excepturi laboriosam nam,
+            ipsam consectetur.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Book now</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+        </div>
+    <section class="reservation" id="reservation">
+    <h1 class="heading"> book now</h1>
+
+    <form action="book.php" method="POST"> <!-- ✅ Corrected action + method -->
+
+        <div class="container">
+
+        <div class="box">
+            <p>name <span>*</span></p>
+            <input type="text" class="input" name="name" placeholder="your Name" required>
+        </div>
+
+        <div class="box">
+            <p>Email <span>*</span></p>
+            <input type="email" class="input" name="email" placeholder="your Email" required>
+        </div>
+
+        <div class="box">
+            <p>check in  <span>*</span></p>
+            <input type="date" class="input" name="checkin" required>
+        </div>
+
+        <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" class="input" name="checkout" required>
+        </div> 
+
+        <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+            <option value="1">1 adult</option>
+            <option value="2">2 adults</option>
+            <option value="3">3 adults</option>
+            <option value="4">4 adults</option>
+            <option value="5">5 adults</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <p>children <span>*</span></p>
+            <select name="children" class="input" required>
+            <option value="0">0 child</option>
+            <option value="1">1 child</option>
+            <option value="2">2 children</option>
+            <option value="3">3 children</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+            <option value="1">1 room</option>
+            <option value="2">2 rooms</option>
+            <option value="3">3 rooms</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <p>Room type <span>*</span></p>
+            <select name="room_type" class="input" required>
+            <option value="1">Deluxe room</option>
+            <option value="2">Family room</option>
+            <option value="3">Daily room</option>
+            <option value="4">Pro room</option>
+            </select>
+        </div>
+
+        </div>
+
+        <input type="submit" value="Check Availability" class="btn">
+    </form>
+    </section>
+
+
+    </section>
+
+
+
+    <footer class="footer" > 
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>contact Info</h4>
+
+                    <ul>
+                        <li> <a href="#"> phone no </a></li>
+                        <li> <a href="#"> address </a></li>
+                        <li> <a href="#"> gf and bf 😊😊❤️❤️❤️ </a></li>
+                        <li> <a href="#">  privacy policy </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+
+                    <ul>
+                        <li> <a href="#"> Home </a></li>
+                        <li> <a href="#"> about </a></li>
+                        <li> <a href="#"> 😊😊❤️ rooms ❤️❤️ </a></li>
+                        <li> <a href="#">  privacy policy </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Extra Links</h4>
+
+                    <ul>
+                        <li> <a href="#"> poliicy </a></li>
+                        <li> <a href="#"> poliicy </a></li>
+                        <li> <a href="#"> poliicy </a></li>
+                        <li> <a href="#"> poliicy </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    
+                    <div class="social-links">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                
+
+                
+                    <!-- <div class="footer-col">
+                        <h4>follow us</h4>
+        
+                        <ul>
+                            <li> <a href="#"> poliicy </a></li>
+                            <li> <a href="#"> poliicy </a></li>
+                            <li> <a href="#"> poliicy </a></li>
+                            <li> <a href="#"> poliicy </a></li>
+                        </ul>
+                    </div>
+            -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="credit"> &copy;copyright @ 2024 by <samp>vishalrajput </samp></div>
+    </footer>
+
+
+
+        
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    </body>
+    </html>
